@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+epoch(){ gdate +"%s.%3N"; }
+conv(){ gdate -d @$1 +"%T.%3N"; }
+
+debut=$(epoch) &&
+gsleep $1 &&
+fin=$(epoch)
+
+conv $debut &&
+conv $fin &&
+echo $fin - $debut | bc
+
+# ./sleepjudge 0.1 means "to time 100 milliseconds"
