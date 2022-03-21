@@ -10,6 +10,6 @@ fin=$(epoch)
 conv $debut &&
 conv $fin &&
 dur=$(echo $fin - $debut | bc | tee /dev/tty) &&
-echo $dur - $1 | bc
+echo $dur - $1 | bc # show the error
 
 # ./sleepjudge 0.1 means "to time 100 milliseconds"
