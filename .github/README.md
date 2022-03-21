@@ -3,5 +3,5 @@ time milliseconds with gdate command
 ## install
 
 ```
-$ git clone 
+$ git clone https://github.com/alpineyahoo/sleepjudge.git
 ```
